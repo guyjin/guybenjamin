@@ -11,9 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
+}
+
+body#home {
     background: url(../img/mount_hood.jpg) no-repeat bottom center fixed;
     background-size: cover;
-    padding: 0 1rem;
 }
 
 h1,h2,h3,h4,h5,h6 {
