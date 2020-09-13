@@ -1,101 +1,119 @@
 /* Base */
 
-html, body {    
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 body#home {
-    background: url(../img/mount_hood.jpg) no-repeat bottom center fixed;
-    background-size: cover;
+  background: url(../img/mount_hood_low.jpg) no-repeat bottom center fixed;
+  background-size: 100vw;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Merriweather', serif;
+body#cv {
+  background: url(../img/block.jpg) no-repeat center right fixed;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
 
 /* Layout */
 
 header {
-    max-width: 700px;
-    width: 100%;
+  max-width: 700px;
+  width: 100%;
 }
 
 /* Nav */
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 nav ul,
 nav ul li {
-    margin: 0;
-    list-style-type: none;
-    padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 700px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 700px;
+  width: 100%;
 }
 
 nav li {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 nav a {
-    display: block;
-    text-align: left;
-    padding: 1rem;
+  display: block;
+  text-align: left;
+  padding: 1rem;
 }
 
 nav li:first-child a {
-    padding-left: 0;
-    padding-right: 2rem;
+  padding-left: 0;
+  padding-right: 2rem;
 }
 
 nav li:last-child a {
-    padding-right: 0;
-    padding-left: 2rem;
+  padding-right: 0;
+  padding-left: 2rem;
 }
 
 /* Main */
 main {
-    width: 100%;
-    max-width: 700px;
-    flex: 1 1 auto;
+  width: 100%;
+  max-width: 700px;
+  flex: 1 1 auto;
 }
-
 
 .strong {
-    font-weight: 600;
+  font-weight: 600;
 }
-
 
 /* Footer */
 
 footer {
-    height: 1.5rem;
-    color: #efefef;
-    font-size: .7rem;
+  width: 100vw;
+  height: 1.5rem;
+  color: #efefef;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body#cv footer {
+  color: #2b2b2b;
+}
+
+body#cv footer a {
+  color: #2b2b2b;
 }
 
 footer a {
-    color: #fff;
+  color: #efefef;
 }
-
